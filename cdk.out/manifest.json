@@ -1,0 +1,552 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "edgarDemoLambdaService": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "edgarDemoLambdaService.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/edgarDemoLambdaService": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d",
+              "id": "bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d",
+              "packaging": "zip",
+              "sourceHash": "bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d",
+              "s3BucketParameter": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dS3Bucket2BB90813",
+              "s3KeyParameter": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dS3VersionKeyF04829F7",
+              "artifactHashParameter": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dArtifactHash77CAE5BC"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/construct-compat.js:405:62)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:175:29)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack.js:425:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:98:33)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApi824227CC",
+            "trace": [
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:401:26)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiCloudWatchRoleC2CD4B88",
+            "trace": [
+              "new Role (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "RestApi._configureCloudWatchRole (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:250:22)",
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:418:18)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiAccountB8152843",
+            "trace": [
+              "RestApi._configureCloudWatchRole (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:254:26)",
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:418:18)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiDeployment620F7D9E56a62c4e4797e4c8702ed4d574c5c20d",
+            "trace": [
+              "new Deployment (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:48:25)",
+              "RestApi._configureDeployment (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:278:38)",
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:420:14)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiDeploymentStageprodE0468BC5",
+            "trace": [
+              "new Stage (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:61:26)",
+              "RestApi._configureDeployment (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:286:36)",
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:420:14)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiEndpointDF57D1DD",
+            "trace": [
+              "RestApi._configureDeployment (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:290:13)",
+              "new RestApi (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:420:14)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsEA6BBA11",
+            "trace": [
+              "new Resource (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:231:26)",
+              "RootResource.addResource (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:28:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/GET/ApiPermission.edgarDemoLambdaServiceDemoLambdaApi141BDCFC.GET..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsGETApiPermissionedgarDemoLambdaServiceDemoLambdaApi141BDCFCGETitems3777FA06",
+            "trace": [
+              "Function.addPermission (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:42:9)",
+              "LambdaIntegration.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:44:22)",
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:41:40)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/GET/ApiPermission.Test.edgarDemoLambdaServiceDemoLambdaApi141BDCFC.GET..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsGETApiPermissionTestedgarDemoLambdaServiceDemoLambdaApi141BDCFCGETitems07162BD8",
+            "trace": [
+              "Function.addPermission (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:42:9)",
+              "LambdaIntegration.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:51:26)",
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:41:40)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/GET/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsGET75E513D6",
+            "trace": [
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:57:26)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/POST/ApiPermission.edgarDemoLambdaServiceDemoLambdaApi141BDCFC.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsPOSTApiPermissionedgarDemoLambdaServiceDemoLambdaApi141BDCFCPOSTitemsDB0CCD24",
+            "trace": [
+              "Function.addPermission (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:42:9)",
+              "LambdaIntegration.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:44:22)",
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:41:40)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/POST/ApiPermission.Test.edgarDemoLambdaServiceDemoLambdaApi141BDCFC.POST..items": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsPOSTApiPermissionTestedgarDemoLambdaServiceDemoLambdaApi141BDCFCPOSTitems9E4266A0",
+            "trace": [
+              "Function.addPermission (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:42:9)",
+              "LambdaIntegration.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:51:26)",
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:41:40)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoLambdaApi/Default/items/POST/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoLambdaApiitemsPOSTBD5024EE",
+            "trace": [
+              "new Method (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/method.js:57:26)",
+              "Resource.addMethod (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:36:16)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/DemoDynamoTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DemoDynamoTable8958A4BF",
+            "trace": [
+              "new Table (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-dynamodb/lib/table.js:456:22)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/GetAllDemoLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAllDemoLambdaHandlerServiceRole77AB422B",
+            "trace": [
+              "new Role (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:35)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/GetAllDemoLambdaHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAllDemoLambdaHandlerServiceRoleDefaultPolicy576B759C",
+            "trace": [
+              "new Policy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToRolePolicy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:60:19)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/GetAllDemoLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAllDemoLambdaHandlerC352A638",
+            "trace": [
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:136:26)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/AssetParameters/bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dS3Bucket2BB90813",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:12:36)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack.js:425:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:98:33)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/AssetParameters/bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dS3VersionKeyF04829F7",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:16:35)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack.js:425:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:98:33)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/AssetParameters/bc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899d/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersbc83fd46e2afedab639921f830ca153101612ef4c25eda92050b8a527dc1899dArtifactHash77CAE5BC",
+            "trace": [
+              "new FileAssetParameters (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:20:38)",
+              "LegacyStackSynthesizer.doAddFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:162:22)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:83:25)",
+              "Stack.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack.js:425:33)",
+              "LegacyStackSynthesizer.addFileAsset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.js:87:31)",
+              "new Asset (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:40:44)",
+              "AssetCode.bind (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/code.js:258:26)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:98:33)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/PostDemoLambdaHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDemoLambdaHandlerServiceRole94A8280A",
+            "trace": [
+              "new Role (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/role.js:72:22)",
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:80:35)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/PostDemoLambdaHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDemoLambdaHandlerServiceRoleDefaultPolicyA7140090",
+            "trace": [
+              "new Policy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/policy.js:56:26)",
+              "Role.addToPrincipalPolicy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-iam/lib/role.js:209:34)",
+              "Function.addToRolePolicy (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:60:19)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/PostDemoLambdaHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PostDemoLambdaHandler09AA66B7",
+            "trace": [
+              "new Function (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/aws-lambda/lib/function.js:136:26)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:58",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "Kernel._create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8367:34)",
+              "Kernel.create (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8108:29)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ],
+        "/edgarDemoLambdaService/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:30:35)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:139:9",
+              "visit (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:200:9)",
+              "visit (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:197:9)",
+              "injectMetadataResources (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:128:5)",
+              "Object.synthesize (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/private/synthesis.js:17:5)",
+              "App.synth (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/jsii-kernel-5u7l3Q/node_modules/@aws-cdk/core/lib/stage.js:100:41)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:134",
+              "Kernel._wrapSandboxCode (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8795:24)",
+              "/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:107",
+              "Kernel._ensureSync (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8776:28)",
+              "Kernel.invoke (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:8183:34)",
+              "KernelHost.processRequest (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9692:36)",
+              "KernelHost.run (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9655:22)",
+              "Immediate._onImmediate (/private/var/folders/ms/89n6w3w15z3514jlt45d28xr0000gr/T/tmpqb1d2f7_/lib/program.js:9656:46)",
+              "processImmediate (internal/timers.js:462:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "edgarDemoLambdaService"
+    }
+  }
+}

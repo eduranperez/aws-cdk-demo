@@ -1,0 +1,49 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  offline-development-api
+  
+Globals:
+  Function:
+    Timeout: 60
+
+Resources:
+  GetAllItemsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: items_api/
+      Handler: app.getAllItemsHandler
+      Runtime: nodejs14.x
+      Events:
+        GetItem:
+          Type: Api
+          Properties:
+            Path: /items/
+            Method: get
+      Environment:
+        Variables:
+          USE_LOCAL_DYNAMODB: true
+          TABLE_NAME: "items"
+          AWS_ACCESS_KEY_ID: "dvd17"
+          AWS_SECRET_ACCESS_KEY: "cxkb2"
+          AWS_REGION: "localhost"
+  addItemFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: items_api/
+      Handler: app.addItemHandler
+      Runtime: nodejs14.x
+      Events:
+        GetItem:
+          Type: Api
+          Properties:
+            Path: /items/
+            Method: post
+      Environment:
+        Variables:
+          USE_LOCAL_DYNAMODB: true
+          TABLE_NAME: "items"
+          AWS_ACCESS_KEY_ID: "dvd17"
+          AWS_SECRET_ACCESS_KEY: "cxkb2"
+          AWS_REGION: "localhost"
+                    
